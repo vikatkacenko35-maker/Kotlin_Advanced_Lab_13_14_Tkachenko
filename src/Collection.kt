@@ -18,9 +18,10 @@ fun main(){
     solarSystem.add("Pluto")
     solarSystem.add(3, "Theia")
     solarSystem[3] = "Future Moon"
-    solarSystem.removeAt(9)
+    //solarSystem.removeAt(9)
     println(solarSystem.contains("Pluto"))
     println("Future Moon" in solarSystem)
+    solarSystem.remove("Pluto")
 //    println(solarSystem[0])
 //    println(solarSystem[1])
 //    println(solarSystem[2])
