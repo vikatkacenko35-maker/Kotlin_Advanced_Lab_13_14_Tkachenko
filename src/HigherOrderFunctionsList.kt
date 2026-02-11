@@ -49,6 +49,10 @@ val cookies = listOf(
     )
 )
 fun main(){
+    val alphabeticalMenu = cookies.sortedBy { it.name }
+    println("Меню в адфавитном порядке:")
+    alphabeticalMenu.forEach { println(it.name) }
+
     val totalPrice = cookies.fold(0.0){total, cookie -> total + cookie.price}
     println("Total price: ${totalPrice}")
     val groupedMenu =cookies.groupBy { it.softBaked }
